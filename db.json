@@ -1,0 +1,64 @@
+{
+    "posts": [
+      { "id": 1, "title": "Hello World", 
+      "auth": "John Doe", 
+      "city": "New York",
+       "name": "Introduction Post"
+     },
+      { "id": 2,
+       "title": "Learning Angular", 
+       "auth": "Jane Smith",
+        "city": "San Francisco",
+         "name": "Angular Basics"
+         },
+      { "id": 3,
+       "title": "Getting Started with JSON Server", 
+       "auth": "Alice Johnson",
+        "city": "Los Angeles",
+         "name": "JSON Server Guide"
+         },
+      { "id": 4,
+       "title": "How to Use TypeScript in Angular",
+        "auth": "Michael Brown",
+         "city": "Seattle",
+          "name": "TypeScript Tutorial" 
+        },
+      { "id": 5, 
+      "title": "Building a Simple App with Angular",
+       "auth": "Chris Evans",
+        "city": "Austin",
+         "name": "App Development"
+         },
+      { "id": 6, 
+      "title": "Understanding Angular Components",
+       "auth": "Olivia Davis", 
+       "city": "Chicago", 
+       "name": "Component Deep Dive" 
+    },
+      { "id": 7, 
+      "title": "Angular Forms and Validation",
+       "auth": "Emma Wilson",
+        "city": "Boston", 
+        "name": "Form Validation" 
+    },
+      { "id": 8, 
+      "title": "Routing in Angular Applications",
+       "auth": "Noah Garcia",
+        "city": "Denver",
+         "name": "Routing Tutorial" 
+        },
+      { "id": 9, 
+      "title": "Working with Angular Services", 
+      "auth": "Liam Martinez", 
+      "city": "Miami",
+       "name": "Service Architecture"
+     },
+      { "id": 10,
+       "title": "Angular Directives: A Quick Guide",
+        "auth": "Sophia Hernandez", 
+        "city": "Phoenix",
+         "name": "Directive Guide"
+         }
+    ]
+  }
+  

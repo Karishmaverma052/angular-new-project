@@ -1,0 +1,8 @@
+input.ng-invalid.ng-touched {
+    border-color: red;
+  }
+  
+  small {
+    color: red;
+  }
+  

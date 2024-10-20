@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-3 bg-success">
+    <h4>{{coursName}}</h4>
+    <div>{{inputType}}</div>
+    <input type="text" value="{{coursName}}" placeholder="Enater text">
+    <input type="{{inputType}}"/>
+
+</div>
+
+  <div class="col-3">
+    <div class="col-3">
+      Properties bindings
+      <div [class]="myClassName">Danger</div>
+      <input type="text" [value]="coursName">
+      <input [type]="inputType"/>
+
+    </div>
+  </div>
+
+  <div class="col-3">
+
+  <button class="btn btn-success"(click)=" showAlert('welome to nguler')">show Welcome</button>
+  <span (click)=" showAlert('this is web')">click me</span>
+  <button class="btn btn-success"(click)=" chengeCoursName()">chenge coures</button>
+  </div>
+  <div class="col-3">
+    <input type="text"  [(ngModel)]="coursName" /> - {{coursName}}
+    <select [(ngModel)]="stateName">
+      <option value="">select</option>
+      <option value="goa">goa</option>
+      <option value="delhi">delhi</option>
+      <option value="mum">mum</option>
+      <option value="luck">luck</option>
+    </select>
+
+  </div>
+  <div class="col-6">
+    <h2>{{firstName()}}</h2>
+  </div>
+</div>

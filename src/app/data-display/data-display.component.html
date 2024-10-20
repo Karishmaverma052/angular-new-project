@@ -1,0 +1,29 @@
+<div 
+ style="
+ display:flex;
+ align-items: center;
+ justify-content:center;
+ height: 100vh;
+ "
+ 
+ >
+ <div>
+ @for (user of data; track $index){
+    <div>
+        <h1>
+            {{ user.name }}
+        
+        </h1>
+        <p>{{user.email}}</p>
+    
+    </div>
+}
+</div>
+</div>
+    
+ 
+
+
+
+
+    

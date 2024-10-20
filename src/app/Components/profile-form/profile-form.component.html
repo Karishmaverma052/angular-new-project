@@ -1,0 +1,25 @@
+<p>profile-form works!</p>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label for="firstName">First Name</label>
+    <input id="firstName" formControlName="firstName">
+    <div *ngIf="profileForm.get('firstName')?.invalid && profileForm.get('firstName')?.touched">
+      <small *ngIf="profileForm.get('firstName')?.hasError('required')">First name is required.</small>
+      <small *ngIf="profileForm.get('firstName')?.hasError('minlength')">Minimum 3 characters required.</small>
+    </div>
+  
+    <label for="lastName">Last Name</label>
+    <input id="lastName" formControlName="lastName">
+    <div *ngIf="profileForm.get('lastName')?.invalid && profileForm.get('lastName')?.touched">
+      <small *ngIf="profileForm.get('lastName')?.hasError('required')">Last name is required.</small>
+    </div>
+  
+    <label for="email">Email</label>
+    <input id="email" formControlName="email">
+    <div *ngIf="profileForm.get('email')?.invalid && profileForm.get('email')?.touched">
+      <small *ngIf="profileForm.get('email')?.hasError('required')">Email is required.</small>
+      <small *ngIf="profileForm.get('email')?.hasError('email')">Invalid email address.</small>
+    </div>
+  
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+  </form>
+  
